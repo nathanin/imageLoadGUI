@@ -9,6 +9,7 @@ Simple interface for opening, viewing and saving cropped subsections of Whole Sl
 * Refine the crop rectangle by specifying (top, top): (size, size)
     * Image pane rectangle should update accordingly
 * Save the selected area to a new file in whatever formats suppored by `PIL`
+* Multiple ways to quick-exit - even where you might not expect ;)
 * **Tested with Aperio's SVS file type, should work for others... but info might not be as expected**
 
 ![Screenshot][ss]
@@ -26,9 +27,11 @@ Simple interface for opening, viewing and saving cropped subsections of Whole Sl
 
 * Simple cross-platform support (i.e. different versions of PIL, Tk, etc.)
 * Mouse-wheel zooming
+* Zooming of any kind, really.
 * Interface refinements like a quick-load menu and sliders. 
 * Allow calling from within command-line (wrap openslide), or within scripts (interactive pop-up style)
 * requirements.txt and allow install via pip
+* Simple scale bar
 
 ### Possibly possible far-reaching goals:
 
