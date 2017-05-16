@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 '''
 GUI interface for extracting any level of image from an SVS file as a new TIFF.
 Uses OpenSlide library to extract and decode the image stack.
@@ -10,12 +12,12 @@ http://xkcd.com/1513/
 
 import os
 from openslide import *
-from tkinter import *
-import tkinter.filedialog
+from Tkinter import *
+# import Tkinter.filedialog
+import tkFileDialog
 import string
 import math
 from PIL import Image, ImageTk
-import matplotlib as mpl
 import numpy as np
 
 #
@@ -74,7 +76,8 @@ class ImageRepack():
 
     def buttonNew(self):
         
-        pathname = tkinter.filedialog.askopenfilename()
+        # pathname = tkinter.filedialog.askopenfilename()
+        pathname = tkFileDialog.askopenfilename()
 
         if pathname != '':
             self.image = SVSImage(pathname)
@@ -513,8 +516,10 @@ class ImageAnalyzer():
 
         pass
 
-print( '\n'*5)
-root = Tk()
-root.wm_title('SVS Repack GUI')
-IV = ImageRepack(root)
-root.mainloop()
+
+if __name__ == '__main__':
+    print( '\n'*5)
+    root = Tk()
+    root.wm_title('SVS Repack GUI')
+    IV = ImageRepack(root)
+    root.mainloop()
