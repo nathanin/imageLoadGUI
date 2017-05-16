@@ -2,7 +2,7 @@
 
 Simple interface for opening, viewing and saving cropped subsections of Whole Slide digital pathology images using the (openslide)[openslide.org] python API.
 
-
+![Screenshot][ss]
 
 
 Some dependencies:
@@ -24,4 +24,4 @@ Contact
 ing.nathany@gmail.com
 
 
-
+[ss]: https://github.com/nathanin/imageLoadGUI/blob/master/screenshot.png
