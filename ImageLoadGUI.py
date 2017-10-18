@@ -497,7 +497,9 @@ class SVSImage(OpenSlide):
         self.preview.destroy()
 
 
-
+'''
+Message box for............. ??
+'''
 class messageBox():
 
     def __init__(self):
@@ -508,18 +510,13 @@ class messageBox():
         self.window.destroy()
 
 
-class ImageAnalyzer():
-    '''
-    WHWHHHHHAAAATTTT?????
-    '''
-    def __init__(self):
 
-        pass
-
-
-if __name__ == '__main__':
+def main():
     print( '\n'*5)
     root = Tk()
     root.wm_title('SVS Repack GUI')
     IV = ImageRepack(root)
     root.mainloop()
+
+if __name__ == '__main__':
+    main()

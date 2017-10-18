@@ -1,6 +1,6 @@
 # ImageLoadGUI
 
-Simple interface for opening, viewing and saving cropped subsections of Whole Slide digital pathology images using the [openslide](openslide.org) python API. Built around summer 2015, since I couldn't find a good way to view SVS files without the ScanScope software. Major workflow limitation. Bad. 
+Simple interface for opening, viewing and saving cropped subsections of Whole Slide digital pathology images using the [openslide](openslide.org) python API. Built around summer 2015, since I couldn't find a good way to view SVS files without the ScanScope software. Major workflow limitation. Bad.
 
 
 ### Features
@@ -16,7 +16,6 @@ Simple interface for opening, viewing and saving cropped subsections of Whole Sl
 
 
 ### Some dependencies:
-
 * Python 2.7
 * numpy
 * python-imaging-tk
@@ -24,20 +23,14 @@ Simple interface for opening, viewing and saving cropped subsections of Whole Sl
 * Tkinter
 
 ### Planned improvements:
-
-* Simple cross-platform support (i.e. different versions of PIL, Tk, etc.)
 * Mouse-wheel zooming
 * Zooming of any kind, really.
-* Interface refinements like a quick-load menu and sliders. 
-* Allow calling from within command-line (wrap openslide), or within scripts (interactive pop-up style)
-* requirements.txt and allow install via pip
-* Simple scale bar
 
-### Possibly possible far-reaching goals:
+<!-- ### Possibly possible far-reaching goals:
 
 * Web-facing interface
 * Factor it and add a place for processing plugins
-* Integration with histo-seg
+* Integration with histo-seg -->
 
 
 ### Contact
